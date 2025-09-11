@@ -1,4 +1,5 @@
 //dias do ano
+<?php
 print date("d/m/y");
     print "<br>";
     print "hoje e o dia " .date("z"). "° do ano";                                                                         
