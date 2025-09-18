@@ -1,0 +1,93 @@
+<?php
+   $nome = "davi goncalves";
+   $data_nasc = "03/11/2006";
+
+   $senha = $nome . $data_nasc;
+   $senha = str_replace(" ", "", $senha);
+   $senha = str_replace("/", "", $senha);
+   $senha = str_shuffle($senha);
+   $senha = substr($senha, 0, 8);
+   print "minha senha e $senha: ";
+
+
+?>
+//////////////////////////////////////////////////////
+FORMULARIO PHP
+-"calculadora"
+
+<form action="index.php" method-"GET">
+    A <input type="number" name="a">
+    B <input type="number" name="b"> 
+    <button type="submit">Enviar</button>
+<form>
+
+<?php
+
+    print"<br>";
+
+    print "Adição = ";
+
+    $a = @$_GET['a'];
+    $b = @$_GET['b'];
+
+    $c = $a + $b;
+
+    print $c;
+
+    print"<br>";
+
+    print "Subtração = ";
+
+    $a = @$_GET['a'];
+    $b = @$_GET['b'];
+
+    $c = $a - $b;
+
+    print $c;
+
+    print"<br>";
+
+    print "Multiplicação = ";
+
+    $a = @$_GET['a'];
+    $b = @$_GET['b'];
+
+    $c = $a * $b;
+
+    print $c;
+    
+    print"<br>";
+
+    print "Divisão = ";
+
+    $a = @$_GET['a'];
+    $b = @$_GET['b'];
+
+    $c = $a / $b;
+
+    print $c;
+
+    print"<br>";
+
+    print "Módulo = ";
+
+    $a = @$_GET['a'];
+    $b = @$_GET['b'];
+
+    $c = $a % $b;
+
+    print $c;
+
+    print"<br>";
+
+    print "Potência = ";
+
+    $a = @$_GET['a'];
+    $b = @$_GET['b'];
+
+    $c = $a ** $b;
+
+    print $c;
+
+
+?>
