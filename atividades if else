@@ -1,0 +1,164 @@
+//Formulário comparação
+
+<form action="if.php" method-"GET">
+    A <input type="number" name="a">
+    B <input type="number" name="b"> 
+    <button type="submit">Enviar</button>
+<form>
+
+<?php
+print"<br>";
+print"<br>";
+
+
+$a = $_GET['a'];
+$b = $_GET['b'];
+if ($a > $b) {
+    print "| $a e maior que $b |";
+}elseif($b > $a){
+    print "| $b e maior que $a |";
+}else{
+    print "| $a e igual a $b |";
+}
+
+/////////////////////////////////////////////////////////
+
+//Atividade 1 - Número positivo ou negativo
+//Escreva um programa em PHP que receba um número e verifique se ele é positivo, negativo ou zero.
+
+<form action="if.php" method-"GET">
+    A <input type="number" name="a">
+    <button type="submit">Enviar</button>
+<form>
+
+
+<?php
+//Formulário comparação
+print"<br>";
+print"<br>";
+
+$a = $_GET['a'];
+$b = 0;
+
+if ($a > $b ) {
+    print "| $a é positivo |";
+}elseif($a < $b){
+    print "| $a é negativo |";
+}elseif($a == $b){
+    print "| $a é zero |";
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+//Atividade 2 - Verificação de idade
+/*Escreva um programa em PHP que receba um número e verifique se ele é positivo, negativo ou zero.
+Peça ao usuário a idade e use if/else para verificar:
+- Se for menor que 12 → exiba "Criança".
+- Se estiver entre 12 e 17 → exiba "Adolescente".
+- Se for 18 ou mais → exiba "Adulto".
+
+<form action="if.php" method-"GET">
+    A <input type="number" name="a">
+    <button type="submit">Enviar</button>
+<form>
+
+
+<?php
+//Formulários
+print"<br>";
+print"<br>";
+
+$a = $_GET['a'];
+
+if ($a < 12 ) {
+    print "Vocé é criança";
+}elseif ($a >= 12 && $a <= 17){
+    print "Você é adolescente";
+}elseif ($a >= 18){
+    print "Você é adulto";
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+atividade 3- caps ou não kkkk
+
+<form action="if.php" method-"GET">
+    Palavra <input type="text" name="p">
+    <button type="submit">Enviar</button>
+<form>
+
+
+<?php
+//P = Palavra
+print"<br>";
+print"<br>";
+
+$p = $_GET['p'];
+
+if ($p == mb_strtoupper($p)) {
+    print "A palavra está em Caps Lock.";
+}elseif ($p == mb_strtolower($p)){
+    print "A palavra não está em Caps Lock.";
+//}elseif ($p == mb_strt) voltar depois
+    
+
+////////////////////////////////////////////////////////////////////
+
+atividade 4-COMEÇA COM A
+
+<form action="if.php" method-"GET">
+    Palavra <input type="text" name="n">
+    <button type="submit">Enviar</button>
+<form>
+
+<?php
+//n = nome
+print"<br>";
+print"<br>";
+$n = $_GET['n'];
+if (substr($n, 0, 1) === "A") {
+print "o mome começa com A";
+}elseif (substr($n, 0, 1) !== "A") {
+    print "o nome nao começa com A";
+}
+
+
+/////////////////////////////////////////////////////////////
+//atividade 5- PAR OU IMPAR
+
+<form action="if.php" method-"GET">
+    A <input type="number" name="a">
+    <button type="submit">Enviar</button>
+<form>
+
+
+<?php
+print"<br>";
+print"<br>";
+
+$a = $_GET['a'];
+
+if ($a % 2 == 0){
+print "numero par";
+}elseif ($a % 2 == 1){
+    print "numero impar";
+}
+
+///////////////////////////////////////////////////////////////////////////
+// atividade 6- vai se fuder
+//terminar
+<form action="if.php" method-"GET">
+    usuario <input type="text" name="a">
+    senha <input type="number" name="b"> 
+    <button type="submit">Enviar</button>
+<form>
+
+<?php
+$a = $_GET['a'];
+$b = $_GET['b'];
+
+if (($a = adm) && ($b = 1234)) {
+    print "Senha correta";
+}elseif (($a != adm) && ($b != 1234)){
+    print "Senha incorreta";
+}
+
