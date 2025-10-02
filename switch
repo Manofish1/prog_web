@@ -1,1 +1,36 @@
+<form action="switch.php" method="GET">
+    Entre com um número do dia da semana:
+    <input type = "number" name ="dia" min="1" max="7">
+    <button type="submit">Emviar</button>
+</form>
+<?php
+  //Fórmula base do switch
+    switch (@$_GET['dia']){
+        case 1:
+            print "Domingo.";
+        break;
 
+        case 2:
+            print "Segunda-feira.";
+        break;
+
+        case 3:
+            print "Terça-feira.";
+        break;
+
+        case 4:
+            print "Quarta-feira.";
+        break;
+
+        case 5:
+            print "Quinta-feira.";
+        break;
+
+        case 6:
+            print "Sexta-feira.";
+        break;
+
+        case 7:
+            print "Sábado.";
+        break;
+    }
