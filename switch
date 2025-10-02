@@ -34,3 +34,93 @@
             print "Sábado.";
         break;
     }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<form action="switch.php" method="GET">
+    Escreva uma letra de A a E para exibir sua nota:
+    <input type = "text" name ="nota" min="A" max="E">
+    <button type="submit">Enviar</button>
+</form>
+<?php
+    //Atividade 2 (Nota com letras)
+    switch (@$_GET['nota']){
+        case 'A':
+            print "Excelente.";
+        break;
+
+        case 'B':
+            print "Bom.";
+        break;
+
+        case 'C':
+            print "Regular.";
+        break;
+
+        case 'D':
+            print "Insuficiente.";
+        break;
+
+        case 'E':
+            print "Reprovado.";
+        break;
+    }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<form action="switch.php" method="GET">
+    Escreva um numero de 1 a 12:
+    <input type = "number" name ="mes" min="1" max="12">
+    <button type="submit">Enviar</button>
+</form>
+<?php
+    //Atividade 3 (mes)
+    switch (@$_GET['mes']){
+        case '1':
+            print "janeiro.";
+        break;
+
+        case '2':
+            print "fevereiro.";
+        break;
+
+        case '3':
+            print "março.";
+        break;
+
+        case '4':
+            print "abril.";
+        break;
+
+        case '5':
+            print "maio.";
+        break;
+        case '6':
+            print "junho.";
+        break;
+
+        case '7':
+            print "julho.";
+        break;
+
+        case '8':
+            print "agosto.";
+        break;
+
+        case '9':
+            print "setembro.";
+        break;
+
+        case '10':
+            print "outubro.";
+        break;
+        case '11':
+            print "novembro."; // melhor mes
+        break;
+
+        case '12':
+            print "dezembro.";
+        break;
+        
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
