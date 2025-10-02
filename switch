@@ -124,3 +124,40 @@
     }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<form action="switch.php" method-"GET"> 
+A <input type = "number" name ="a">
+B <input type = "number" name ="b">
+<select id="c" name="c">
+  <option value="som">+</option>
+  <option value="sub">-</option>
+  <option value="mult">*</option>
+  <option value="div">/</option>
+</select>
+    <button type="submit">Enviar</button>
+<form>
+<?php
+
+//Atividade 4 - Calculadora com switch
+$a = @$_GET['a'];
+$b = @$_GET['b'];
+switch (@$_GET['c']){
+    case 'som': 
+        print $a + $b;
+     break;
+
+     case 'sub': 
+        print $a - $b;
+     break;
+
+     case 'mult': 
+        print $a * $b;
+     break;
+
+     case 'div': 
+        print $a / $b;
+     break;
+    }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
