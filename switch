@@ -4,7 +4,7 @@
     <button type="submit">Emviar</button>
 </form>
 <?php
-  //Fórmula base do switch
+  //Fórmula base do switch - Atividade 1 do dia da semana
     switch (@$_GET['dia']){
         case 1:
             print "Domingo.";
