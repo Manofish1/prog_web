@@ -160,4 +160,32 @@ switch (@$_GET['c']){
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+<form action="switch.php" method-"GET"> 
+    Escreva sua idade <input type="number" name="a">
+    <button type="submit">Enviar</button>
+<form>
 
+<?php
+
+//Atividade 6 - Verificação de idade
+
+switch ($a = $_GET['a']){
+
+    case $a < 12: 
+        print "Criança";
+     break;
+
+     case $a >= 12 && $a <= 17: 
+        print "Adolescente";
+     break;
+
+     case $a >= 18 && $a <= 64: 
+        print "Adulto";
+     break;
+
+     case $a >= 65: 
+        print "Idoso";
+     break;
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
