@@ -144,21 +144,22 @@ print "numero par";
 }
 
 ///////////////////////////////////////////////////////////////////////////
-// atividade 6- vai se fuder
-//terminar
-<form action="if.php" method-"GET">
+// atividade 6
+<form action="if.php" method="GET">
     usuario <input type="text" name="a">
     senha <input type="number" name="b"> 
     <button type="submit">Enviar</button>
 <form>
 
 <?php
+if (isset($_GET['a']) && (isset($_GET['a'])) {
 $a = $_GET['a'];
 $b = $_GET['b'];
 
-if (($a = adm) && ($b = 1234)) {
+if (($a = "adm") && ($b = 1234)) {
     print "Senha correta";
-}elseif (($a != adm) && ($b != 1234)){
+}elseif (($a != "adm") && ($b != 1234)){
     print "Senha incorreta";
+}
 }
 
