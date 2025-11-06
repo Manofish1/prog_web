@@ -1,4 +1,3 @@
-
 <h1>editar funcionario</h1>
 <?php
 $sql =  "SELECT * FROM funcionario WHERE id_funcionario=". $_REQUEST['id_funcionario'];
@@ -9,7 +8,7 @@ $row = $res->fetch_object();
 
 ?>
  <form action="?page=salvar-funcionario" method="POST">
-	<input type="hidden" name="acao" value="cadastrar">
+	<input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id_funcionario" value="<?php print $row->id_funcionario; ?>">
 	<div class="mb-3">
 		<label>Nome
