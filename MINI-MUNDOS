@@ -1,0 +1,54 @@
+Mini-Mundo 1 – Escola de Idiomas
+escola (-nome, endereço, cursos ofertados)
+alunos (-nome, matricula, telefone, nome do curso, horário do curso)
+curso (-nome, horário, nome do professor)
+professor (-nome, telefone, matricula, idioma, horários)
+
+
+Mini-Mundo 2 – Clínica Veterinária
+
+clinica veterinária (nome, endereço, serviços ofertados)
+cliente (nome, cpf, telefone, nome dos animal)
+animal (nome, espécie, raça, porte, peso, data de nascimento, comorbidade, nome do dono)
+veterinário (nome, CRMV, cpf, especialização)
+consulta (nome do vet, nome do animal, data, diagnostico, tratamento)
+
+Mini-Mundo 3 – Biblioteca Comunitária
+
+biblioteca (nome, endereço)
+livros (titulo, autor, ano de publicação, gênero, usuário)
+usuário (nome, cpf, telefone, titulo do livro)
+empréstimo (nome do usuário, titulo do livro, data de retirada, data de devolução)
+
+Mini-Mundo 4 – Lanchonete Delivery
+
+lanchonete (nome, endereço)
+cliente (nome, pedido, forma de pagamento)
+pedido (nome do cliente, item do cardápio , data, valor total)
+cardápio ( nome do item, preço, categoria)
+entregador (nome, código, nome do veiculo, nome do pedido)
+
+Mini-Mundo 5 – Sistema de Streaming
+
+sistema (nome, quantidade de acessos)
+usuário (nome do usuário, login, plano, lista de favoritos)
+catalogo (nome da obra, tipo, ano, gênero)
+lista de favoritos (nome do usuário, nome da obra)
+log de acesso (nome do usuário, nome da obra, data assistida)
+
+Mini-Mundo 6 – Hospital Universitário
+
+hospital (id_hospital, nome, endereço, serviços ofertados)
+paciente (id_paciente, nome, cpf, data de nascimento, telefone, patologia, histórico de internação)
+medico residente (id_residente, nome, cpf, RGM, nome do preceptor, especialidade)
+medico preceptor (id_preceptor, nome, cpf, CRM, especialidade)
+consulta (id_consulta, nome do medico residente, nome do paciente, data, exame)
+exame (id_exame, id_residente, id_paciente, id_consulta, resultado)
+histórico de internação (id_paciente, id_residente, data, período)
+
+Mini-Mundo 7 – Evento Musical (Festival)
+
+sistema( nome do festival, nome do artista, nome do palco, horário do artista)
+festival (nome, endereço, empresa, categoria, data)
+artista (nome, gênero, data, palco, horário, palco)
+palco (nome, capacidade, localização)
